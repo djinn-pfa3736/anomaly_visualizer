@@ -59,7 +59,7 @@ class TableWindow(QWidget):
 
 		self.table_view = QTableView(parent)
 
-		self.plot_label = QLabel("Column Number to Plot: ")
+		self.plot_label = QLabel("Column Number(Area Number): ")
 		self.plot_label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 		self.plot_label.setAlignment(Qt.AlignCenter)
 
@@ -68,17 +68,17 @@ class TableWindow(QWidget):
 		self.plot_button = QPushButton("Plot", self)
 		self.plot_button.clicked.connect(self.plot_column)
 
-		self.region_min_label = QLabel("Plot Region Min: ")
+		self.region_min_label = QLabel("Starting Days: ")
 		self.region_min_label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 		self.region_min_label.setAlignment(Qt.AlignRight)
 
 		self.region_min = QLineEdit()
-		self.region_max_label = QLabel("Plot Region Max: ")
+		self.region_max_label = QLabel("Ending Days: ")
 		self.region_max_label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 		self.region_max_label.setAlignment(Qt.AlignRight)
 		self.region_max = QLineEdit()
 
-		self.max_wavelen_label = QLabel('Maximum Wave Length(Days): ')
+		self.max_wavelen_label = QLabel('Cutoff Wave Length(Days): ')
 		self.max_wavelen = QLineEdit()
 
 		self.apply_button = QPushButton("Apply Highpass Filter", self)
