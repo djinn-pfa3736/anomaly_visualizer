@@ -1,6 +1,6 @@
 ApplyBandpassFilter <- function(wave.vec, freq.sample, filter.low, filter.high) {
 
-	library(signal)
+	# library(signal)
 
 	filter.N <- 2
 
